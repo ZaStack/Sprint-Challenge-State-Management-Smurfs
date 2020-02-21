@@ -22,24 +22,24 @@ In this challenge, you are to build a Smurfs village utilizing context or Redux 
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What problem does the context API help solve?
+- [x] What problem does the context API help solve?
 
 Prop Drilling. Passing items down through reacct component tree.
 
-- [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+- [x] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
 
 Actions are payloads of inofrmation that aend data form your application to your store. Reducers dictate how state changes in response to actions. The store holds and allows access to an app's state.
 
-- [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
+- [x] What is the difference between Application state and Component state? When would be a good time to use one over the other?
 
 
 Application state is global, whereas Component state only exists within that component. If you are building a large, complicated app, redux is advantageous as it allows you to create and use one state and just spread it around, verses having to set many states and use prop drilling to pass the information into components.
 
-- [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+- [x] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
 
 Thunk allows asyncronous interaction with the store. It also causes action creators to return functions instead of actions.
 
-- [ ] What is your favorite state management system you've learned and this sprint? Please explain why!
+- [x] What is your favorite state management system you've learned and this sprint? Please explain why!
 
 Context seems like much less work for smaller scale apps, but Redux seems more versatile and scales better for large, complicated apps. I think I prefer Redux, mostly because I imagine in a professional setting, I'm more likely to be dealing with large, sprawling sites.
 
@@ -47,12 +47,12 @@ Context seems like much less work for smaller scale apps, but Redux seems more v
 
 Follow these steps to set up your project:
 
-- [ ] `fork & clone` this repository.
-- [ ] `cd` into the forked copy of this repository.
-- [ ] **RUN** `yarn` to retrieve all `server-side` the dependencies.
-- [ ] **RUN** `yarn start` or `npm start` to get your API up and running on `http://localhost:3333`. This is the **URL** you're going to need to use within your React app in order to make AJAX requests for data.
-- [ ] After your API is up and running, you can open chrome and type in `http://localhost:3333/smurfs`. You should see an array with one smurf in it returned to you. This is an array that your **API** will be using to store our Smurf Data.
-- [ ] **LOOK** at your `smurfs` directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
+- [x] `fork & clone` this repository.
+- [x] `cd` into the forked copy of this repository.
+- [x] **RUN** `yarn` to retrieve all `server-side` the dependencies.
+- [x] **RUN** `yarn start` or `npm start` to get your API up and running on `http://localhost:3333`. This is the **URL** you're going to need to use within your React app in order to make AJAX requests for data.
+- [x] After your API is up and running, you can open chrome and type in `http://localhost:3333/smurfs`. You should see an array with one smurf in it returned to you. This is an array that your **API** will be using to store our Smurf Data.
+- [x] **LOOK** at your `smurfs` directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
 - [ ] **Open** `src/index.js` to make sure that your app is ready to roll with the proper middleware.
 - [ ] **cd** into `smurfs` and run `yarn` to retrieve the client side dependencies.
 - [ ] **RUN** `yarn start` to fire up your React application. There ought to be a pretty little message awaiting you welcoming you to the app. `Follow` the prompting.
